@@ -16,7 +16,7 @@ export const personalInfo: PersonalInfo = {
 export const professionalGoal: ProfessionalGoal = {
   title: 'Objectif Professionnel',
   description:
-    'Passionné par le développement web et les nouvelles technologies, je recherche un poste de développeur Full Stack où je pourrai mettre à profit mes compétences en React, TypeScript et Node.js pour créer des applications web modernes et performantes.',
+    'J’entame un mastère en développement et recherche une alternance (3 sem. entreprise / 1 sem. école)',
 };
 
 export const languages: Language[] = [
