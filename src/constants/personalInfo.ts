@@ -9,7 +9,7 @@ export const personalInfo: PersonalInfo = {
   location: 'Lille, France',
   linkedin: 'https://www.linkedin.com/in/thomas-dusséaux',
   github: 'https://github.com/Detzio',
-  profileImage: 'public/PP.jpeg',
+  profileImage: '/PP.jpeg',
 };
 
 export const professionalGoal: ProfessionalGoal = {
