@@ -1,0 +1,200 @@
+/* ============================================
+   PROJECTS - Projets personnels/scolaires
+   ============================================ */
+
+.projects__header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projects__description {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin: 0;
+}
+
+.projects__github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3498db;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #e3f2fd;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.projects__github-link:hover,
+.projects__github-link:focus {
+  background: #3498db;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-card__image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #ecf0f1;
+}
+
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-card__image {
+  transform: scale(1.05);
+}
+
+.project-card__content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 0.75rem 0;
+}
+
+.project-card__description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #34495e;
+  margin: 0 0 1rem 0;
+}
+
+.project-card__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-card__tech-badge {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.project-card__highlights {
+  margin: 0 0 1rem 0;
+  padding-left: 1.5rem;
+  list-style: none;
+  flex: 1;
+}
+
+.project-card__highlights li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: #34495e;
+  font-size: 0.9rem;
+}
+
+.project-card__highlights li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.project-card__links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #ecf0f1;
+}
+
+.project-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: #ecf0f1;
+  color: #2c3e50;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-card__link:hover,
+.project-card__link:focus {
+  background: #bdc3c7;
+  transform: translateY(-2px);
+}
+
+.project-card__link--primary {
+  background: #3498db;
+  color: white;
+}
+
+.project-card__link--primary:hover,
+.project-card__link--primary:focus {
+  background: #2980b9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card__content {
+    padding: 1.25rem;
+  }
+
+  .project-card__image-wrapper {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card__links {
+    flex-direction: column;
+  }
+
+  .project-card__link {
+    justify-content: center;
+  }
+}

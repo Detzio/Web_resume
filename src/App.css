@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
+/* ============================================
+   APP - Styles globaux de l'application CV
+   ============================================ */
+
+.app {
+  min-height: 100vh;
+  background: #f3f7ea;
+}
+
+.app__main {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+.app__footer {
+  background: #2c3e50;
+  color: white;
   text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app__footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive */
+@media (max-width: 768px) {
+  .app__main {
+    padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .app__footer {
+    padding: 1.5rem;
+    font-size: 0.85rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Accessibilité : focus visible */
+:focus-visible {
+  outline: 3px solid #3498db;
+  outline-offset: 2px;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
 }

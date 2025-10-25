@@ -1,35 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// ============================================
+// APP - Orchestration du CV Web
+// ============================================
 
+import ContactInfo from './components/sections/ContactInfo';
+import ProfessionalGoal from './components/sections/ProfessionalGoal';
+import TechnicalSkills from './components/sections/TechnicalSkills';
+import Experience from './components/sections/Experience';
+import Education from './components/sections/Education';
+import Projects from './components/sections/Projects';
+
+import { personalInfo, professionalGoal } from './constants/personalInfo';
+import { skillsByCategory } from './constants/skills';
+import { experiences, education, projects } from './constants/data';
+
+import './App.css';
+
+/**
+ * Composant principal du CV Web
+ * Architecture clean et modulaire
+ */
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <div className="app">
+      {/* En-tête avec informations de contact */}
+      <ContactInfo info={personalInfo} />
+
+      {/* Contenu principal du CV */}
+      <main className="app__main">
+        {/* Objectif professionnel */}
+        <ProfessionalGoal goal={professionalGoal} />
+
+        {/* Compétences techniques */}
+        <TechnicalSkills skillCategories={skillsByCategory} />
+
+        {/* Expériences professionnelles */}
+        <Experience experiences={experiences} />
+
+        {/* Projets */}
+        <Projects projects={projects} />
+
+        {/* Formation */}
+        <Education education={education} />
+      </main>
+
+      {/* Pied de page */}
+      <footer className="app__footer">
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          © {new Date().getFullYear()} {personalInfo.firstName}{' '}
+          {personalInfo.lastName} • CV créé avec React & TypeScript
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,16 @@
+
+
+.professional-goal__description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #34495e;
+  text-align: justify;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .professional-goal__description {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
