@@ -30,8 +30,8 @@ function App() {
         {/* Objectif professionnel */}
         <ProfessionalGoal goal={professionalGoal} />
 
-        {/* Compétences techniques */}
-        <TechnicalSkills skillCategories={skillsByCategory} />
+        {/* Formation */}
+        <Education education={education} />
 
         {/* Expériences professionnelles */}
         <Experience experiences={experiences} />
@@ -39,8 +39,8 @@ function App() {
         {/* Projets */}
         <Projects projects={projects} />
 
-        {/* Formation */}
-        <Education education={education} />
+        {/* Compétences techniques */}
+        <TechnicalSkills skillCategories={skillsByCategory} />
       </main>
 
       {/* Pied de page */}
