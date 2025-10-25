@@ -1,6 +1,3 @@
-/* ============================================
-   PROJECTS - Projets personnels/scolaires
-   ============================================ */
 
 .projects__header {
   margin-bottom: 2rem;
@@ -173,7 +170,7 @@
   background: #2980b9;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .projects__grid {
     grid-template-columns: 1fr;

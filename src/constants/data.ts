@@ -24,7 +24,7 @@ export const experiences: Experience[] = [
     company: 'Pitaya',
     location: 'Lille, France',
     startDate: 'Saisonnier 2022',
-    endDate: 'Saisonnier 2022',
+    endDate: '',
     description:
       'Poste polyvalent en restauration rapide',
     achievements: [
@@ -40,7 +40,7 @@ export const experiences: Experience[] = [
     company: 'Association',
     location: 'Lille, France',
     startDate: 'Saisonnier 2017',
-    endDate: 'Saisonnier 2017',
+    endDate: '',
     description:
       'Animation et accompagnement de personnes en situation de handicap',
     achievements: [
