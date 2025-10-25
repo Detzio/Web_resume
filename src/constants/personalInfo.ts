@@ -1,4 +1,5 @@
 import type { PersonalInfo, ProfessionalGoal, Language } from '../types';
+import profilePhoto from '../assets/images/PP.jpeg';
 
 export const personalInfo: PersonalInfo = {
   firstName: 'Thomas',
@@ -9,7 +10,7 @@ export const personalInfo: PersonalInfo = {
   location: 'Lille, France',
   linkedin: 'https://www.linkedin.com/in/thomas-dusséaux',
   github: 'https://github.com/Detzio',
-  profileImage: '/PP.jpeg',
+  profileImage: profilePhoto,
 };
 
 export const professionalGoal: ProfessionalGoal = {
