@@ -155,6 +155,13 @@ export const skills: Skill[] = [
     description: 'Outil de design collaboratif pour UI/UX',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
   },
+  {
+    id: 'skill-scala',
+    name: 'Scala',
+    category: 'fullstack',
+    description: 'Langage de programmation fonctionnelle et orientée objet',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg',
+  },
 ];
 
 export const skillsByCategory: SkillCategory[] = [

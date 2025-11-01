@@ -6,9 +6,6 @@ interface EducationProps {
   education: EducationType[];
 }
 
-/**
- * Section de la formation et des études
- */
 const Education = ({ education }: EducationProps) => {
   return (
     <Section title="Formation" id="education" className="education">

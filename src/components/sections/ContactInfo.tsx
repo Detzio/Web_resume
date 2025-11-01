@@ -5,15 +5,11 @@ interface ContactInfoProps {
   info: PersonalInfo;
 }
 
-/**
- * Section des informations de contact avec photo
- * Accessible et responsive
- */
+
 const ContactInfo = ({ info }: ContactInfoProps) => {
   return (
     <header className="contact-info" role="banner">
       <div className="contact-info__container">
-        {/* Photo de profil */}
         {info.profileImage && (
           <div className="contact-info__image-wrapper">
             <img
@@ -24,14 +20,12 @@ const ContactInfo = ({ info }: ContactInfoProps) => {
           </div>
         )}
 
-        {/* Informations principales */}
         <div className="contact-info__details">
           <h1 className="contact-info__name">
             {info.firstName} {info.lastName}
           </h1>
           <p className="contact-info__title">{info.title}</p>
 
-          {/* Coordonnées */}
           <div className="contact-info__links">
             <a
               href={`mailto:${info.email}`}
@@ -54,7 +48,6 @@ const ContactInfo = ({ info }: ContactInfoProps) => {
             </span>
           </div>
 
-          {/* Liens sociaux */}
           <div className="contact-info__social">
             {info.linkedin && (
               <a

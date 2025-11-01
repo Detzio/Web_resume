@@ -1,6 +1,4 @@
-/* ============================================
-   EDUCATION - Formation et études
-   ============================================ */
+
 
 .education__list {
   display: flex;
@@ -78,7 +76,6 @@
   left: 0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .education__item {
     padding: 1.25rem;
