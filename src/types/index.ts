@@ -65,6 +65,8 @@ export interface Project {
   github?: string;
   image?: string;
   highlights?: string[];
+  previewImages?: string[];
+  detailedDescription?: string;
 }
 
 export interface Language {
