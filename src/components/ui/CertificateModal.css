@@ -1,0 +1,92 @@
+/* Certificate Modal */
+.certificate-modal {
+  padding: 1rem 0;
+}
+
+.certificate-modal__title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary, #2c3e50);
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* PDF Viewer */
+.certificate-modal__content {
+  margin-bottom: 1.5rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-modal__pdf {
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  border: none;
+  display: block;
+}
+
+/* Actions */
+.certificate-modal__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.certificate-modal__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 2px solid var(--primary-color, #3498db);
+  color: var(--primary-color, #3498db);
+  background: transparent;
+  cursor: pointer;
+}
+
+.certificate-modal__button:hover {
+  background: var(--primary-color, #3498db);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.certificate-modal__button--primary {
+  background: var(--primary-color, #3498db);
+  color: white;
+}
+
+.certificate-modal__button--primary:hover {
+  background: var(--primary-color-dark, #2980b9);
+  border-color: var(--primary-color-dark, #2980b9);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certificate-modal__title {
+    font-size: 1.5rem;
+  }
+
+  .certificate-modal__pdf {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .certificate-modal__actions {
+    flex-direction: column;
+  }
+
+  .certificate-modal__button {
+    justify-content: center;
+    width: 100%;
+  }
+}

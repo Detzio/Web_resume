@@ -25,7 +25,8 @@ export interface Skill {
   name: string;
   category: 'frontend' | 'fullstack' | 'backend' | 'mobile' | 'database' | 'tools' | 'other';
   description?: string;
-  icon?: string; // URL ou chemin de l'icône
+  icon?: string;
+  certificate?: string;
 }
 
 export interface SkillCategory {

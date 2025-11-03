@@ -1,4 +1,7 @@
 import type { Skill, SkillCategory } from '../types';
+import htmlCertif from '../assets/MIMO-HTML-certif.pdf';
+import cssCertif from '../assets/MIMO-CSS-certif.pdf';
+import jsCertif from '../assets/MIMO-JS-certif.pdf';
 
 /**
  * Compétences techniques organisées par catégorie
@@ -11,6 +14,7 @@ export const skills: Skill[] = [
     category: 'frontend',
     description: 'Langage de balisage pour structurer les pages web',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+    certificate: htmlCertif,
   },
   {
     id: 'skill-css',
@@ -18,6 +22,7 @@ export const skills: Skill[] = [
     category: 'frontend',
     description: 'Feuilles de style en cascade pour le design',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+    certificate: cssCertif,
   },
   {
     id: 'skill-react',
@@ -34,6 +39,7 @@ export const skills: Skill[] = [
     category: 'fullstack',
     description: 'Langage de programmation pour le web (frontend & backend)',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    certificate: jsCertif,
   },
   {
     id: 'skill-typescript',
