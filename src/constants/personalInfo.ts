@@ -16,7 +16,8 @@ export const personalInfo: PersonalInfo = {
 export const professionalGoal: ProfessionalGoal = {
   title: 'Objectif Professionnel',
   description:
-    'J’entame un mastère en développement et recherche une alternance (3 sem. entreprise / 1 sem. école)',
+    'J’entame un mastère en développement et recherche une alternance (3 sem. entreprise / 1 sem. école). Étudiant en développement, je vois le code comme un terrain de jeu où la logique rencontre la créativité. Curieux de nature et rigoureux dans mon travail, je cherche aujourd’hui une alternance pour transformer mes idées en projets concrets, apprendre des meilleurs et continuer à progresser, un commit à la fois. Ce qui m’anime : comprendre le “pourquoi” derrière chaque ligne de code et avancer avec des personnes qui partagent la même envie de créer et d’évoluer.',
+    
 };
 
 export const languages: Language[] = [
