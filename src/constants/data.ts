@@ -1,5 +1,6 @@
 import type { Experience, Education, Project } from '../types';
 import appNoteImage from '../assets/images/VisualAppNoteV1.png';
+import casinoramaImage from '../assets/images/CasinoramaV1.png';
 
 export const experiences: Experience[] = [
   {
@@ -150,14 +151,19 @@ export const projects: Project[] = [
     id: 'project-4',
     name: 'Casinorama',
     description:
-      'Jeu de casino en Java avec logique métier et gestion des probabilités',
+      'Mon premier gros projet scolaire en Java. À l\'époque, nous collaborions via partage de fichier sur Discord. Ce projet nous a appris les bases de Java et de l\'algorithmie.',
     technologies: ['Java'],
     link: 'https://github.com/Detzio/Casinorama',
+    image: casinoramaImage,
+    previewImages: [casinoramaImage],
+    detailedDescription:
+      'Mon premier gros projet scolaire en Java. À l\'époque, nous collaborions via partage de fichier sur Discord, ce qui était un vrai défi d\'organisation ! Ce projet nous a permis d\'apprendre les bases de Java, de comprendre l\'algorithmie et de gérer la logique métier d\'un jeu de casino avec ses probabilités.',
     highlights: [
       'Logique métier et probabilités',
       'Architecture propre',
       'Système de jeu complet',
-      'Tests unitaires',
+      'Collaboration en équipe',
+      'Premiers pas en Java',
     ],
   },
   {
