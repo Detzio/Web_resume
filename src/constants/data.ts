@@ -1,4 +1,5 @@
 import type { Experience, Education, Project } from '../types';
+import appNoteImage from '../assets/images/VisualAppNoteV1.png';
 
 export const experiences: Experience[] = [
   {
@@ -177,9 +178,11 @@ export const projects: Project[] = [
     id: 'project-6',
     name: 'app_note',
     description:
-      'Application de prise de notes simple avec stockage local',
+      'L\'un de mes premiers projets d\'application de prise de notes locale',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     link: 'https://github.com/Detzio/app_note',
+    image: appNoteImage,
+    previewImages: [appNoteImage],
     highlights: [
       'Stockage local (localStorage / IndexedDB)',
       'Création, édition, suppression de notes',
