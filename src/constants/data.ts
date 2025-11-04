@@ -2,6 +2,7 @@ import type { Experience, Education, Project } from '../types';
 import appNoteImage from '../assets/images/VisualAppNoteV1.png';
 import casinoramaImage from '../assets/images/CasinoramaV1.png';
 import steamCheckImage from '../assets/images/SteamCheckV1.png';
+import dockPilotImage from '../assets/images/DockPilotV1.png';
 
 export const experiences: Experience[] = [
   {
@@ -124,12 +125,18 @@ export const projects: Project[] = [
     id: 'project-2',
     name: 'Docker-Android-App',
     description:
-      'Application mobile / outil de monitoring de conteneurs, avec interface mobile pour gérer/visualiser des conteneurs Docker',
+      'Projet annuel permettant de créer et gérer les conteneurs Docker depuis un serveur nécessitant donc de s\'y connecter. Il permet également de voir les logs du conteneur et les statistiques liées à ses performances.',
     technologies: ['Kotlin', 'Android', 'API Docker'],
     link: 'https://github.com/Detzio/Docker-Android-App',
+    image: dockPilotImage,
+    previewImages: [dockPilotImage],
+    detailedDescription:
+      'Projet annuel d\'application mobile permettant de créer et gérer des conteneurs Docker depuis un serveur distant. L\'application nécessite une connexion au serveur pour interagir avec les conteneurs. Elle offre une vue complète sur les logs en temps réel, les statistiques de performances (CPU, RAM, réseau), et permet une gestion intuitive des conteneurs (démarrage, arrêt, suppression). Interface Android moderne développée en Kotlin avec intégration de l\'API Docker.',
     highlights: [
       'Architecture modulaire (UI / service / données)',
       'Gestion des logs et métriques des conteneurs',
+      'Connexion serveur distant',
+      'Statistiques de performances en temps réel',
       'Interface mobile intuitive',
       'Intégration API Docker',
     ],
