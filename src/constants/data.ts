@@ -112,7 +112,7 @@ export const projects: Project[] = [
     id: 'project-1',
     name: 'CV Web Interactif',
     description:
-      'Application de CV en ligne avec React et TypeScript, déployée sur GitHub Pages',
+      'Page actuelle de CV en ligne avec React et TypeScript, déployée sur GitHub Pages avec un déploiement continu via GitHub Actions.',
     technologies: ['React', 'TypeScript', 'CSS', 'Vite'],
     highlights: [
       'Architecture modulaire et clean code',
