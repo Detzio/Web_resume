@@ -1,6 +1,7 @@
 import type { Experience, Education, Project } from '../types';
 import appNoteImage from '../assets/images/VisualAppNoteV1.png';
 import casinoramaImage from '../assets/images/CasinoramaV1.png';
+import steamCheckImage from '../assets/images/SteamCheckV1.png';
 
 export const experiences: Experience[] = [
   {
@@ -170,9 +171,11 @@ export const projects: Project[] = [
     id: 'project-5',
     name: 'SteamCheck',
     description:
-      'Application pour interagir avec l\'API Steam (statuts, jeux, etc.)',
+      'Premiere application multiplateforme en Kotlin, permettant d\'interagir avec l\'API Steam (statuts, jeux, etc.)',
     technologies: ['Kotlin'],
     link: 'https://github.com/Detzio/SteamCheck',
+    image: steamCheckImage,
+    previewImages: [steamCheckImage],
     highlights: [
       'Appels API externes',
       'Parsing JSON',
