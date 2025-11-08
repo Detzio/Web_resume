@@ -3,6 +3,7 @@ import appNoteImage from '../assets/images/VisualAppNoteV1.png';
 import casinoramaImage from '../assets/images/CasinoramaV1.png';
 import steamCheckImage from '../assets/images/SteamCheckV1.png';
 import dockPilotImage from '../assets/images/DockPilotV1.png';
+import SocialNetworkImage from '../assets/images/SocialNetworkV1.png';
 
 export const experiences: Experience[] = [
   {
@@ -148,6 +149,10 @@ export const projects: Project[] = [
       'Mini-site de réseau social avec gestion d\'utilisateurs, posts et interactions',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     link: 'https://github.com/Detzio/MiniSocialWebPage',
+    image: SocialNetworkImage,
+    previewImages: [SocialNetworkImage],
+    detailedDescription:
+      'Mini-site de réseau social permettant la gestion complète des utilisateurs, la création et la gestion de posts, ainsi que les interactions sociales telles que les likes et commentaires. Le projet met en œuvre des fonctionnalités de base d\'un réseau social, offrant une expérience utilisateur interactive et engageante. Développé avec des technologies web classiques pour une accessibilité maximale.',
     highlights: [
       'Gestion d\'utilisateurs et posts',
       'Interactions sociales',
