@@ -211,4 +211,20 @@ export const projects: Project[] = [
       'Interface responsive',
     ],
   },
+    {
+    id: 'project-7',
+    name: 'BeFind',
+    description:
+      "Outil privé en développement : plateforme de création/gestion de CV et portfolio avec simulateur d'entretiens assisté par IA et outils d'aide à la recherche d'emploi.",
+    technologies: ['JavaScript', 'TypeScript', 'Node', 'PostgreSQL', 'Docker', 'AWS'],
+    detailedDescription: `Nom du projet : Befind
+Date de commencement : 05/11/2023
+`,
+    highlights: [
+      "Simulateur d'entretien technique assisté par IA",
+      'Génération de retours personnalisés et questions adaptatives',
+      'Backend Node.js avec base PostgreSQL',
+      "Outil privé — accès restreint",
+    ],
+  },
 ];
