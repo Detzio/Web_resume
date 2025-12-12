@@ -7,6 +7,10 @@ import dockPilotImage from "../assets/images/DockPilotV1.png";
 import SocialNetworkImage from "../assets/images/SocialNetworkV1.png";
 import snakeGameImage from "../assets/images/snake_python.png";
 import beFindImage from "../assets/images/BEFIND_LOGO.jpg";
+import HuntedLabyImage from "../assets/images/HuntedLaby.png";
+import HuntedLabyVideo from "../assets/images/HuntedLabyM.mp4";
+import spaceInvadersImage from "../assets/images/SpaceInvaders.png";
+import spaceInvadersVideo from "../assets/images/SpaceInvader.mp4";
 
 export const experiences: Experience[] = [
   {
@@ -129,7 +133,7 @@ export const projects: Project[] = [
   },
   {
     id: "project-2",
-    name: "Docker-Android-App",
+    name: "Docker Android App",
     description:
       "Projet annuel permettant de créer et gérer les conteneurs Docker depuis un serveur nécessitant donc de s'y connecter. Il permet également de voir les logs du conteneur et les statistiques liées à ses performances.",
     technologies: ["Kotlin", "Android", "API Docker"],
@@ -149,7 +153,7 @@ export const projects: Project[] = [
   },
   {
     id: "project-3",
-    name: "MiniSocialWebPage",
+    name: "Mini Social Web Page",
     description:
       "Mini-site de réseau social avec gestion d'utilisateurs, posts et interactions",
     technologies: ["JavaScript", "HTML", "CSS"],
@@ -202,7 +206,7 @@ export const projects: Project[] = [
   },
   {
     id: "project-6",
-    name: "app_note",
+    name: "application de notes locale",
     description:
       "L'un de mes premiers projets d'application de prise de notes locale",
     technologies: ["JavaScript", "HTML", "CSS"],
@@ -243,13 +247,46 @@ Date de commencement : 05/11/2023
   },
   {
     id: "project-8",
-    name: "Snake-Game-Dev",
+    name: "Snake Game Python",
     description:
       "V1: Jeu Snake en Python : déplacement du serpent, gestion des collisions, score et augmentation de la difficulté.",
     technologies: ["Python"],
     link: "https://github.com/Detzio/Snake-Game-Dev-",
     image: snakeGameImage,
     previewImages: [snakeGameImage],
+    highlights: [
+      "Boucle de jeu temps réel",
+      "Gestion des collisions et du score",
+      "Structure de code claire et évolutive",
+    ],
+  },
+  {
+    id: "project-9",
+    name: "Hunted Labyrinth",
+    description:
+      "Un jeu de labyrinthe où le joueur doit atteindre la sortie tout en évitant des chasseurs.",
+    technologies: ["Scala"],
+    link: "https://github.com/Detzio/HuntedLaby",
+    image: HuntedLabyImage,
+    previewImages: [HuntedLabyImage],
+    video: HuntedLabyVideo,
+    previewVideo: [HuntedLabyVideo],
+    highlights: [
+      "Implémentation en style fonctionnel (sans var/while/for/foreach).",
+      "Le labyrinthe est généré aléatoirement et garantit un chemin vers la sortie.",
+    ],
+  },
+  {
+    id: "project-10",
+    name: "Space Invaders",
+    description:
+      "Un jeu classique de Space Invaders développé en Python avec Pygame.",
+    technologies: ["Python"],
+    link: "https://github.com/Detzio/Space_Invader",
+    image: spaceInvadersImage,
+    previewImages: [spaceInvadersImage],
+    video: spaceInvadersVideo,
+    previewVideo: [spaceInvadersVideo],
     highlights: [
       "Boucle de jeu temps réel",
       "Gestion des collisions et du score",

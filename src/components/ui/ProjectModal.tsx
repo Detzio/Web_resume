@@ -18,12 +18,14 @@ const ProjectModal = ({ project }: ProjectModalProps) => {
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
+  const video = project.videoUrl || project.video;
+
   return (
     <div className="project-modal">
       <h2 className="project-modal__title">{project.name}</h2>
 
-      {/* Image Gallery */}
-      {images.length > 0 && (
+      {/* Image Gallery (hidden when a video is available) */}
+      {images.length > 0 && !video && (
         <div className="project-modal__gallery">
           <div className="project-modal__gallery-main">
             <img
@@ -79,6 +81,30 @@ const ProjectModal = ({ project }: ProjectModalProps) => {
               ))}
             </div>
           )}
+        </div>
+      )}
+
+      {/* Video (optional) */}
+      {video && (
+        <div className="project-modal__video">
+          <h3>🎬 Vidéo de démonstration</h3>
+          {/* UX: responsive container with 16:9 ratio */}
+          <div className="project-modal__video-wrapper">
+            {/* If it's a YouTube/Vimeo URL, the iframe will work directly. For local mp4, use <video> tag. */}
+            {/\.mp4($|\?)/i.test(video) ? (
+              <video controls preload="metadata">
+                <source src={video} type="video/mp4" />
+                Votre navigateur ne supporte pas la vidéo.
+              </video>
+            ) : (
+              <iframe
+                src={video}
+                title={`Vidéo de ${project.name}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            )}
+          </div>
         </div>
       )}
 

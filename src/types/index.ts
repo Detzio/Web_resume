@@ -23,7 +23,14 @@ export interface ProfessionalGoal {
 export interface Skill {
   id: string;
   name: string;
-  category: 'frontend' | 'fullstack' | 'backend' | 'mobile' | 'database' | 'tools' | 'other';
+  category:
+    | "frontend"
+    | "fullstack"
+    | "backend"
+    | "mobile"
+    | "database"
+    | "tools"
+    | "other";
   description?: string;
   icon?: string;
   certificate?: string;
@@ -40,7 +47,7 @@ export interface Experience {
   company: string;
   location: string;
   startDate: string;
-  endDate: string | 'Présent';
+  endDate: string | "Présent";
   description: string;
   achievements: string[];
   technologies?: string[];
@@ -68,6 +75,11 @@ export interface Project {
   highlights?: string[];
   previewImages?: string[];
   detailedDescription?: string;
+  /** URL de la vidéo de démonstration (YouTube/Vimeo/fichier local). */
+  videoUrl?: string;
+  /** Compat: certaines entrées `data.ts` utilisent `video`/`previewVideo` */
+  video?: string;
+  previewVideo?: string[];
 }
 
 export interface Language {
@@ -85,5 +97,5 @@ export interface SectionProps {
 export interface TooltipProps {
   content: string;
   children: React.ReactNode;
-  position?: 'top' | 'bottom' | 'left' | 'right';
+  position?: "top" | "bottom" | "left" | "right";
 }

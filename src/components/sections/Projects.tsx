@@ -54,6 +54,11 @@ const Projects = ({ projects }: ProjectsProps) => {
                     <span className="project-card__view-more">
                       👁️ Voir plus
                     </span>
+                    {(project.videoUrl || project.video) && (
+                      <span className="project-card__video-badge" aria-label="Vidéo disponible">
+                        🎬 Vidéo
+                      </span>
+                    )}
                   </div>
                 </div>
               )}

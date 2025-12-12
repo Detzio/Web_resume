@@ -1,3 +1,30 @@
+.project-modal__video {
+  margin-top: 1.5rem;
+}
+
+.project-modal__video h3 {
+  margin: 0 0 0.75rem 0;
+}
+
+.project-modal__video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(16,24,40,0.16);
+  background: #000;
+}
+
+.project-modal__video-wrapper iframe,
+.project-modal__video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 /* Project Modal */
 .project-modal {
   padding: 1rem 0;

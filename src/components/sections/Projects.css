@@ -111,6 +111,19 @@
   transform: translateY(0);
 }
 
+/* Badge indicating a video is available */
+.project-card__video-badge {
+  margin-left: 12px;
+  color: white;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  backdrop-filter: blur(6px);
+}
+
 .project-card__content {
   padding: 1.5rem;
   flex: 1 1 auto;
