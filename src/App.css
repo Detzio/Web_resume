@@ -13,6 +13,9 @@
   --muted: #51606a;
   --border: #e6eef7;
   --focus: #0b5fff;
+  /* Fixed header height + desired gap to first section */
+  --header-height: 160px;
+  --header-gap: 32px;
 }
 
 .app {
@@ -26,6 +29,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  /* Offset for fixed contact header + extra spacing before ProfessionalGoal */
+  padding-top: calc(var(--header-height) + var(--header-gap));
 }
 
 .app__footer {
@@ -46,8 +51,14 @@
 }
 
 @media (max-width: 768px) {
+  :root {
+    --header-height: 150px;
+    --header-gap: 28px;
+  }
+
   .app__main {
     padding: 1rem;
+    padding-top: calc(var(--header-height) + var(--header-gap));
   }
 
   .app__footer {
@@ -63,4 +74,11 @@
 }
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --header-height: 140px;
+    --header-gap: 24px;
+  }
 }

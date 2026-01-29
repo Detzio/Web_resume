@@ -26,7 +26,7 @@ const ContactInfo = ({ info }: ContactInfoProps) => {
           </h1>
           <p className="contact-info__title">{info.title}</p>
 
-          <div className="contact-info__links">
+          <div className="contact-info__actions">
             <a
               href={`mailto:${info.email}`}
               className="contact-info__social-link"
@@ -46,9 +46,7 @@ const ContactInfo = ({ info }: ContactInfoProps) => {
             <span className="contact-info__social-link">
               📍 {info.location}
             </span>
-          </div>
 
-          <div className="contact-info__social">
             {info.linkedin && (
               <a
                 href={info.linkedin}

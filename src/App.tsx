@@ -27,6 +27,7 @@ function App() {
 
       {/* Contenu principal du CV */}
       <main className="app__main">
+
         {/* Objectif professionnel */}
         <ProfessionalGoal goal={professionalGoal} />
 
