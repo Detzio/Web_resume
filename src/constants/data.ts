@@ -14,6 +14,30 @@ import spaceInvadersVideo from "../assets/images/SpaceInvader.mp4";
 
 export const experiences: Experience[] = [
   {
+    id: "exp-0",
+    title: "Technicien informatique",
+    company: "Décathlon",
+    location: "Helpline",
+    startDate: "Janvier 2026",
+    endDate: "Présent",
+    description: "Support technique et assistance informatique",
+    achievements: [
+      "Diagnostic hardware/software et systeme",
+      "Accueil et support utilisateur omnicanal multilingue (anglais et français)",
+      "Gestion de tickets et résolution de problèmes techniques",
+    ],
+    technologies: [
+      "Windows",
+      "macOS",
+      "Jira",
+      "SMA - X",
+      "Genesys",
+      "WSO",
+      "BIOS",
+      "Python",
+    ],
+  },
+  {
     id: "exp-1",
     title: "Intégrateur logiciel et formateur (Alternance)",
     company: "Actemium Lille Digital Solutions",
@@ -22,12 +46,22 @@ export const experiences: Experience[] = [
     endDate: "Septembre 2025",
     description: "Programmation logicielle no-code, low-code et Power BI",
     achievements: [
-      "Consulting et formation des clients à la plateforme TeePee",
-      "Développement de solutions no-code et low-code adaptées aux besoins clients",
+      "Développement de solutions métiers no-code et low-code adaptées aux besoins clients et livraison",
       "Création de tableaux de bord et analyses avec Power BI",
+      "Consulting et formation des clients à la plateforme TeePee",
       "Animation de sessions de formation pour les utilisateurs",
     ],
-    technologies: ["No-code", "Low-code", "Power BI", "TeePee"],
+    technologies: [
+      "No-code",
+      "Low-code",
+      "Power BI",
+      "TeePee",
+      "Python",
+      "SQL",
+      "HTML/CSS",
+      "JavaScript",
+      "Git",
+    ],
   },
   {
     id: "exp-2",
