@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import type { PersonalInfo } from '../../types';
 import { useActiveSection, type SectionId } from '../../hooks/useActiveSection';
 import './ContactInfo.css';
@@ -17,24 +17,18 @@ const sections: { id: SectionId; label: string }[] = [
 
 const ContactInfo = ({ info }: ContactInfoProps) => {
   const { activeSection, scrollToSection } = useActiveSection();
-  const [showNav, setShowNav] = useState(false);
 
   useEffect(() => {
     // Fermer la nav mobile au redimensionnement
     const handleResize = () => {
       if (window.innerWidth >= 768) {
-        setShowNav(false);
+        // Navigation auto-reset on resize
       }
     };
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  const getActiveSectionLabel = () => {
-    const activeLabel = sections.find((s) => s.id === activeSection)?.label;
-    return activeLabel ? `${activeLabel}` : '';
-  };
 
   return (
     <div className="contact-info-wrapper">
@@ -129,7 +123,6 @@ const ContactInfo = ({ info }: ContactInfoProps) => {
               }`}
               onClick={() => {
                 scrollToSection(section.id);
-                setShowNav(false);
               }}
               aria-current={activeSection === section.id ? 'page' : undefined}
             >
