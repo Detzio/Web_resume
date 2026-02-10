@@ -9,7 +9,7 @@ interface ProfessionalGoalProps {
 
 const ProfessionalGoal = ({ goal }: ProfessionalGoalProps) => {
   return (
-    <Section title={goal.title} id="professional-goal" className="professional-goal">
+    <Section title={goal.title} id="section-goal" className="professional-goal">
       <p className="professional-goal__description">{goal.description}</p>
     </Section>
   );

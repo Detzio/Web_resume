@@ -2,6 +2,7 @@ import type { Skill, SkillCategory } from "../types";
 import htmlCertif from "../assets/MIMO-HTML-certif.pdf";
 import cssCertif from "../assets/MIMO-CSS-certif.pdf";
 import jsCertif from "../assets/MIMO-JS-certif.pdf";
+import sqlCertif from "../assets/MIMO-SQL-certif.pdf";
 import powerbiFormation from "../assets/Certificat de réalisation - Formation POWERBI T.DUSSEAUX 11 2024.pdf";
 
 /**
@@ -108,11 +109,12 @@ export const skills: Skill[] = [
 
   // === DATABASES ===
   {
-    id: "skill-mysql",
-    name: "MySQL",
+    id: "skill-sql",
+    name: "SQL",
     category: "database",
-    description: "Système de gestion de base de données relationnelle",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    description: "Langage de requête structuré pour les bases de données",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq9TQlOhv6008rPfgyJBaF-UUXdszfxJO7uA&s",
+    certificate: sqlCertif,
   },
   {
     id: "skill-postgresql",

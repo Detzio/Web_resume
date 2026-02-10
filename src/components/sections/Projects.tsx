@@ -14,7 +14,7 @@ const Projects = ({ projects }: ProjectsProps) => {
 
   return (
     <>
-      <Section title="Projets Personnels & Scolaires" id="projects" className="projects">
+      <Section title="Projets Personnels & Scolaires" id="section-projects" className="projects">
         <div className="projects__header">
           <p className="projects__description">
             Découvrez mes projets sur{' '}

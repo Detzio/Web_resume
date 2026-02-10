@@ -1,15 +1,45 @@
+import { useEffect, useState } from 'react';
 import type { PersonalInfo } from '../../types';
+import { useActiveSection, type SectionId } from '../../hooks/useActiveSection';
 import './ContactInfo.css';
 
 interface ContactInfoProps {
   info: PersonalInfo;
 }
 
+const sections: { id: SectionId; label: string }[] = [
+  { id: 'goal', label: 'Objectif' },
+  { id: 'education', label: 'Formation' },
+  { id: 'experience', label: 'Expérience' },
+  { id: 'projects', label: 'Projets' },
+  { id: 'skills', label: 'Compétences' },
+];
 
 const ContactInfo = ({ info }: ContactInfoProps) => {
+  const { activeSection, scrollToSection } = useActiveSection();
+  const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    // Fermer la nav mobile au redimensionnement
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setShowNav(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const getActiveSectionLabel = () => {
+    const activeLabel = sections.find((s) => s.id === activeSection)?.label;
+    return activeLabel ? `${activeLabel}` : '';
+  };
+
   return (
-    <header className="contact-info" role="banner">
-      <div className="contact-info__container">
+    <div className="contact-info-wrapper">
+      <header className="contact-info" role="banner">
+        <div className="contact-info__container">
         {info.profileImage && (
           <div className="contact-info__image-wrapper">
             <img
@@ -86,6 +116,30 @@ const ContactInfo = ({ info }: ContactInfoProps) => {
         </div>
       </div>
     </header>
+
+    {/* Navigation header sticky */}
+    <nav className="section-nav" role="navigation">
+      <div className="section-nav__container">
+        <div className="section-nav__menu">
+          {sections.map((section) => (
+            <button
+              key={section.id}
+              className={`section-nav__link ${
+                activeSection === section.id ? 'section-nav__link--active' : ''
+              }`}
+              onClick={() => {
+                scrollToSection(section.id);
+                setShowNav(false);
+              }}
+              aria-current={activeSection === section.id ? 'page' : undefined}
+            >
+              {section.label}
+            </button>
+          ))}
+        </div>
+      </div>
+    </nav>
+    </div>
   );
 };
 

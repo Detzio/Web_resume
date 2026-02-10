@@ -12,7 +12,7 @@ interface TechnicalSkillsProps {
  */
 const TechnicalSkills = ({ skillCategories }: TechnicalSkillsProps) => {
   return (
-    <Section title="Compétences Techniques" id="technical-skills" className="technical-skills">
+    <Section title="Compétences Techniques" id="section-skills" className="technical-skills">
       <div className="technical-skills__categories">
         {skillCategories.map((category) => (
           <div key={category.name} className="technical-skills__category">

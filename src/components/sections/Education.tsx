@@ -8,7 +8,7 @@ interface EducationProps {
 
 const Education = ({ education }: EducationProps) => {
   return (
-    <Section title="Formation" id="education" className="education">
+    <Section title="Formation" id="section-education" className="education">
       <div className="education__list">
         {education.map((edu) => (
           <article key={edu.id} className="education__item">

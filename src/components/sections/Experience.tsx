@@ -8,7 +8,7 @@ interface ExperienceProps {
 
 const Experience = ({ experiences }: ExperienceProps) => {
   return (
-    <Section title="Expériences Professionnelles" id="experience" className="experience">
+    <Section title="Expériences Professionnelles" id="section-experience" className="experience">
       <div className="experience__timeline">
         {experiences.map((exp) => (
           <article key={exp.id} className="experience__item">

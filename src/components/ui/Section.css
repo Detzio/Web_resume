@@ -23,16 +23,6 @@
   position: relative;
 }
 
-.cv-section__title::before {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, #3498db, #2ecc71);
-}
-
 .cv-section__content {
   margin-top: 1rem;
 }
